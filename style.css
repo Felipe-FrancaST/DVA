@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0; 
+  box-sizing: border-box; 
+}
+
+h1{
+  text-align: center;
+    padding: 20px;
+    background-color: #d0e5f2;
+    color: #193378;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: solid black 2px;
+    background-color: pink;
+}
+body {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  color: #fff;
+}
+
+a{
+  color: #fff;
+  list-style-type: none;
+}
+
+
+.game-section {
+  width: 100%;
+  height: 900px;
+}
+
+.game-area {
+  background: #fff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  align-items: center;
+}
+.container-fluid {
+  background: #d0e5f2;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.memory-game {
+  padding-left: 60px;
+  position: relative;
+  display: flex;
+  width:1200px;
+  max-width: 100% !important;
+  height:500px;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+.memory-card {
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
+  position: relative;
+  box-shadow: 2px 2px 4px 2px rgb(0 0 0 / 30%);
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  border: solid #d0e5f2 3px;
+  border-radius: 3px;
+  
+}
+.memory-card:hover{
+  border: solid #193378 4px;
+}
+
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  border: #333 8px;
+  background: #341f44;
+  backface-visibility: hidden;
+  list-style: none;
+}
+
+.memory-card:active {
+  transform: scale(0.97);
+  transition: transform 0.2s;
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face {
+  transform: rotateY(180deg);
+}
