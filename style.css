@@ -59,6 +59,7 @@ a{
   height:500px;
   flex-wrap: wrap;
   perspective: 1000px;
+  padding-right: 60px;
   
 }
 .memory-card {
