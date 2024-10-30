@@ -4,7 +4,7 @@
   box-sizing: border-box; 
 }
 
-h1{
+.title{
   text-align: center;
     padding: 20px;
     background-color: #d0e5f2;
@@ -14,13 +14,13 @@ h1{
     border: solid black 2px;
     background-color: pink;
 }
-body {
+/* body {
   justify-content: center;
   width: 100%;
   display: flex;
   text-align: center;
   color: #fff;
-}
+} */
 
 a{
   color: #fff;
@@ -38,6 +38,7 @@ a{
   padding-top: 30px;
   padding-bottom: 30px;
   align-items: center;
+  
 }
 .container-fluid {
   background: #d0e5f2;
@@ -58,6 +59,7 @@ a{
   height:500px;
   flex-wrap: wrap;
   perspective: 1000px;
+  
 }
 .memory-card {
   width: calc(25% - 10px);
@@ -99,4 +101,22 @@ a{
 
 .front-face {
   transform: rotateY(180deg);
+}
+
+
+footer{
+  height: 400px;
+  background-image: linear-gradient(180deg, #d0e5f2,#193378 , black );
+  text-align: center;
+  border-top: solid 2px black;
+}
+
+.logo-rodape{
+  padding: 80px;
+}
+
+#nome{
+  color: white;
+  margin-top: 30px;
+  font-size: 30px;
 }
