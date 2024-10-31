@@ -121,3 +121,20 @@ footer{
   margin-top: 30px;
   font-size: 30px;
 }
+
+@media (max-width: 500px){
+  .memory-game {
+    position: relative;
+    display: flex;
+    width:500px;
+    max-width: 100% !important;
+    height:700px;
+    flex-wrap: wrap;
+    perspective: 1000px;
+  }
+
+  .game-section{
+    height: 1100px;
+  }
+  
+}
